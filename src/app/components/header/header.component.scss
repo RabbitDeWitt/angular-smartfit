@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .logo-container {
+    background: black;
+    padding: 24px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 75px;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 80%;
+    margin-inline: auto;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-bottom: 24px;
+      gap: 20px;
+
+      h1 {
+        font-family: 'Gotham';
+        font-size: 34px;
+        color: var(--dark-grey);
+      }
+
+      .heading-border {
+        height: 10px;
+        width: 35%;
+        background-color: var(--dark-grey);
+      }
+    }
+
+
+    p {
+      color: var(--light-grey);
+    }
+  }
+}
