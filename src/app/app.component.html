@@ -1,3 +1,8 @@
 <app-header />
-<app-form />
+<app-form (submitEvent)="onSubmit()" />
+<app-legend />
+
+@if (showList | async) {
+<app-card-list [unitsList]="unitsList" />
+}
 <router-outlet />
